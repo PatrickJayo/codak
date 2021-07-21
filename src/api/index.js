@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://codak-backend.herokuapp.com/posts' });
+const API = axios.create({ baseURL: 'https://codak-backend.herokuapp.com/' });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
